@@ -14,6 +14,16 @@ public class Slitherin extends Hogwarts {
         this.authority = authority;
     }
 
+    void compare(Slitherin first) {
+        int sum1 = first.getAmbition() + first.getAuthority() + first.getCunning() + first.getResource() + first.getDetermination();
+        int sum2 = ambition + authority + cunning + resource + determination;
+        if (sum1 > sum2) {
+            System.out.println(first.getName() + " лучший слизеринец");
+        } else {
+            System.out.println(getName() + " лучший слизеринец");
+        }
+    }
+
     public int getAuthority() {
         return authority;
     }

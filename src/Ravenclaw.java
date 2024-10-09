@@ -12,6 +12,16 @@ public class Ravenclaw extends Hogwarts {
         this.creation = creation;
     }
 
+    void compare(Ravenclaw first) {
+        int sum1 = first.getCreation() + first.getMind() + first.getWisdom() + first.getWit();
+        int sum2 = creation + mind + wisdom + wit;
+        if (sum1 > sum2) {
+            System.out.println(first.getName() + " лучший когтевранец");
+        } else {
+            System.out.println(getName() + " лучший когтевранец");
+        }
+    }
+
     public int getMind() {
         return mind;
     }
@@ -46,7 +56,7 @@ public class Ravenclaw extends Hogwarts {
 
     @Override
     public String toString() {
-        return super.toString()+
+        return super.toString() +
                 ", факультет Когтевран" +
                 ", ум " + mind +
                 ", мудрость " + wisdom +

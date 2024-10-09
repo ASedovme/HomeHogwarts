@@ -10,6 +10,16 @@ public class Huffenpuff extends Hogwarts {
         this.honesty = honesty;
     }
 
+    void compare(Huffenpuff first) {
+        int sum1 = first.getHardWork() + first.getLoyalty() + first.getHonesty();
+        int sum2 = hardWork + loyalty + honesty;
+        if (sum1 > sum2) {
+            System.out.println(first.getName() + " лучший Пуффендуец");
+        } else {
+            System.out.println(getName() + " лучший Пуффендуец");
+        }
+    }
+
     public int getHardWork() {
         return hardWork;
     }
@@ -40,6 +50,6 @@ public class Huffenpuff extends Hogwarts {
                 ", факультет Пуффендуй" +
                 ", трудолюбие " + hardWork +
                 ", верность " + loyalty +
-                ", честность" + honesty ;
+                ", честность" + honesty;
     }
 }

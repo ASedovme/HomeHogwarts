@@ -10,6 +10,16 @@ public class Griffindor extends Hogwarts {
         this.bravery = bravery;
     }
 
+    void compare(Griffindor first) {
+        int sum1 = first.getBravery() + first.getHonor() + first.getNobility();
+        int sum2 = bravery + honor + nobility;
+        if (sum1 > sum2) {
+            System.out.println(first.getName() + " лучший гриффиндорец");
+        } else {
+            System.out.println(getName() + " лучший гриффиндорец");
+        }
+    }
+
     public int getNobility() {
         return nobility;
     }
@@ -37,7 +47,7 @@ public class Griffindor extends Hogwarts {
     @Override
     public String toString() {
         return super.toString() +
-                ", факультет Гриффиндор"  +
+                ", факультет Гриффиндор" +
                 ", благородство " + nobility +
                 ", храбрость " + honor +
                 ", отвага " + bravery;

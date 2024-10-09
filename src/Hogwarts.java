@@ -11,6 +11,19 @@ public class Hogwarts {
         this.transgression = transgression;
     }
 
+    public void compare(Hogwarts first) {
+        if (first.getTransgression() > transgression) {
+            System.out.println(first.getName() + " лучше трансгессирует");
+        } else {
+            System.out.println(getName() + " лучше трансгессирует");
+        }
+        if (first.getMagic() > magic) {
+            System.out.println(first.getName() + " лучше машет палочкой");
+        } else {
+            System.out.println(getName() + " лучше лучше машет палочкой");
+        }
+    }
+
     public String getName() {
         return name;
     }
