@@ -19,8 +19,13 @@ public class Main {
         Slitherin grMo = new Slitherin("Grahem Montegy", 78, 64, 82, 65, 42, 36, 45, 66);
         Slitherin grGo = new Slitherin("Gregory Goyle", 64, 65, 48, 35, 65, 28, 44, 55);
 
+        compareGriffindor(haPo,heGr);
 
     }
+    public static void compareGriffindor (Griffindor first, Griffindor second){
+
+    }
+
 
 
 }
