@@ -46,11 +46,11 @@ public class Ravenclaw extends Hogwarts {
 
     @Override
     public String toString() {
-        return "Ravenclaw{" +
-                "mind=" + mind +
-                ", wisdom=" + wisdom +
-                ", wit=" + wit +
-                ", creation=" + creation +
-                '}';
+        return super.toString()+
+                ", факультет Когтевран" +
+                ", ум " + mind +
+                ", мудрость " + wisdom +
+                ", остроумие " + wit +
+                ", творчество " + creation;
     }
 }

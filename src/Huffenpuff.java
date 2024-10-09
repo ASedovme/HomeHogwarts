@@ -33,4 +33,13 @@ public class Huffenpuff extends Hogwarts {
     public void setHonesty(int honesty) {
         this.honesty = honesty;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", факультет Пуффендуй" +
+                ", трудолюбие " + hardWork +
+                ", верность " + loyalty +
+                ", честность" + honesty ;
+    }
 }

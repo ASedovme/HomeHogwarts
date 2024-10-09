@@ -45,11 +45,10 @@ public class Hogwarts {
 
     @Override
     public String toString() {
-        return "Hogwarts{" +
-                "name='" + name + '\'' +
-                ", character=" + character +
-                ", magic=" + magic +
-                ", transgression=" + transgression +
-                '}';
+        return "Студент Хогвартса " +
+                "Имя " + name +
+                ", характер " + character +
+                ", магия " + magic +
+                ", трансгрессия " + transgression;
     }
 }
